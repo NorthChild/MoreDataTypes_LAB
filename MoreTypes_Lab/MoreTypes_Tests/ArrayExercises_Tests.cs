@@ -7,7 +7,7 @@ namespace MoreTypes_Tests
 {
     class ArrayExercises_Tests
     {
-            // ALL DONE
+            // 1/4 DONE
             // DONE
 
         private List<string> _list = new List<string>{ "Alpha", "Beta", "Gamma", "Delta", "Epsilon", "Zeta" }; 

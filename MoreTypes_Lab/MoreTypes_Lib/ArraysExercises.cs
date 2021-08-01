@@ -5,29 +5,24 @@ namespace MoreTypes_Lib
 {
     public class ArraysExercises
     {
+
+            // DONE
+
         // returns a 1D array containing the contents of a given List
         public static string[] Make1DArray(List<string> contents)
         {
-            //string[] stringArray = new string[];
-
-            //string finArray = new string[];
-
-            //foreach (string index in contents) 
-            //{
-            //    finArray.Insert(index);
-
-            //    //Add(index);
-            //}
-
-            //return stringArray;
-            throw new NotImplementedException();
+            return contents.ToArray();
         }
+
+            //
 
         // returns a 3D array containing the contents of a given List
         public static string[,,] Make3DArray(int length1, int length2, int length3, List<string> contents)
         {
             throw new NotImplementedException();
         }
+
+            //
 
         // returns a jagged array containing the contents of a given List
         public static string[][] MakeJagged2DArray(int countRow1, int countRow2, List<string> contents)

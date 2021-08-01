@@ -7,6 +7,9 @@ namespace MoreTypes_Tests
 {
     class ArrayExercises_Tests
     {
+            // ALL DONE
+            // DONE
+
         private List<string> _list = new List<string>{ "Alpha", "Beta", "Gamma", "Delta", "Epsilon", "Zeta" }; 
         [Test]
         public void GivenAListOfStrings_Make1DArray_ReturnsAnArrayOfTheSameStrings()
@@ -21,6 +24,8 @@ namespace MoreTypes_Tests
             Assert.That(result[5], Is.EqualTo("Zeta"), "Last element incorrect");
         }
 
+            
+
         [Test]
         public void GivenAListOfStrings_Make3DArray_ReturnsA3DArrayOfTheSameStrings()
         {
@@ -34,6 +39,8 @@ namespace MoreTypes_Tests
             Assert.That(result[1, 0, 2], Is.EqualTo("Zeta"), "Last element incorrect");
         }
 
+
+
         [Test]
         public void GivenLengthsThatDontFitTheListOfStrings_Make3DArray_ThrowAnArgumentException()
         {
@@ -41,6 +48,8 @@ namespace MoreTypes_Tests
                 Throws.TypeOf<ArgumentException>()
                 .With.Message.EqualTo("Number of elements in list must match array size")); ;
         }
+
+
 
         [Test]
         public void GivenAListOfStrings_MakeJagged2DArray_ReturnsAJaggedArrayOfTheSameStrings()

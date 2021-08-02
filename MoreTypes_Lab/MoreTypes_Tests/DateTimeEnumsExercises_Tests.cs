@@ -5,7 +5,9 @@ using MoreTypes_Lib;
 namespace MoreTypes_Tests
 {
     class DateTimeEnumsExercises_Tests
-    {
+    {   
+            // ALL DONE
+
         [Test]
         public void GivenValidDate_AgeAt_ReturnsCorrectAge()
         {
@@ -30,7 +32,7 @@ namespace MoreTypes_Tests
             var birthDate = new DateTime(1992, 8, 21);
             var date = new DateTime(1992, 5, 27);
             Assert.That(() => DateTimeEnumsExercises.AgeAt(birthDate, date), Throws.TypeOf<ArgumentException>()
-        .With.Message.EqualTo("Error - birthDate is in the future"));
+        .With.Message.Contains("Error - birthDate is in the future"));
         }
 
         [Test]

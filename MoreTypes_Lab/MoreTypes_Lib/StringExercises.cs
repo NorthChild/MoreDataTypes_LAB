@@ -69,37 +69,32 @@ namespace MoreTypes_Lib
         public static string CountLetters(string input)
         {
 
-            List<string> A = new List<string>();
-            List<string> B = new List<string>();
-            List<string> C = new List<string>();
-            List<string> D = new List<string>();
+            int A = 0;
+            int B = 0;
+            int C = 0;
+            int D = 0;
 
-            foreach (var element in input) 
+            foreach (var element in input)
             {
-                if (element == 'A') 
+                if (element == 'A')
                 {
-                    A.Add(element.ToString());
+                    A += 1;
                 }
                 else if (element == 'B')
                 {
-                    B.Add(element.ToString());
+                    B += 1;
                 }
                 else if (element == 'C')
                 {
-                    C.Add(element.ToString());
+                    C += 1;
                 }
                 else if (element == 'D')
                 {
-                    D.Add(element.ToString());
+                    D += 1;
                 }
             }
 
-            var aCount = A.Count;
-            var bCount = B.Count;
-            var cCount = C.Count;
-            var dCount = D.Count;
-
-            return $"A:{aCount} B:{bCount} C:{cCount} D:{dCount}";
+            return $"A:{A} B:{B} C:{C} D:{D}";
 
         }
     }
